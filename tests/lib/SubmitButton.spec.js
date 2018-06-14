@@ -6,7 +6,7 @@ import SubmitButton from '../../lib/SubmitButton';
 
 describe('SubmitButton', () => {
   it('should render a disabled button', () => {
-    const wrapper = mount(<SubmitButton disabled={true} />);
+    const wrapper = mount(<SubmitButton disabled />);
     expect(wrapper.props().disabled).to.be.equal(true);
   });
 
