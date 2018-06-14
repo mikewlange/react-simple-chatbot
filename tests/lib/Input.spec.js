@@ -6,7 +6,7 @@ import Input from '../../lib/Input';
 
 describe('Input', () => {
   it('should render a disabled input', () => {
-    const wrapper = mount(<Input disabled />);
+    const wrapper = mount(<Input disabled={true} />);
     expect(wrapper.props().disabled).to.be.equal(true);
   });
 
