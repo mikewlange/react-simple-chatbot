@@ -11,7 +11,7 @@ describe('SubmitButton', () => {
   });
 
   it('should render a invalid button', () => {
-    const wrapper = mount(<SubmitButton invalid={true} />);
+    const wrapper = mount(<SubmitButton invalid />);
     expect(wrapper.props().invalid).to.be.equal(true);
   });
 });
