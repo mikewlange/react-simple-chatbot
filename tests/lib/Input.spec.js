@@ -11,7 +11,7 @@ describe('Input', () => {
   });
 
   it('should render a invalid input', () => {
-    const wrapper = mount(<Input invalid />);
+    const wrapper = mount(<Input invalid={true} />);
     expect(wrapper.props().invalid).to.be.equal(true);
   });
 });
